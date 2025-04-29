@@ -2,7 +2,6 @@
 This JavaScript code uses **Three.js** to create a 3D interactive UI with animated geometric graphs based on virtual windows. It includes a **search widget**, a **shortcut bar** with quick links, and smooth animations. The scene responds to mouse movements, with idle animations after 5 seconds of inactivity.
 Here is a `README.md` file for your project:
 
-```markdown
 # 3D New Tab Theme Chrome Extension
 
 A Chrome extension that replaces your new tab page with a custom 3D scene. The scene features animated cubes and dynamic window management using **Three.js**. It tracks window sizes and positions and stores them in **localStorage**.
@@ -40,6 +39,40 @@ A Chrome extension that replaces your new tab page with a custom 3D scene. The s
 ├── .gitignore               # Git ignore file
 └── README.md                # Project README
 ```
+## HOW TO IMPLEMENT:
+To make your Chrome extension's new tab page the default when opening a new tab, you just need to install it via Developer Mode and Chrome will use your custom index.html from the extension.
+
+- 🔧 Steps to Set Your New Tab Extension as Default
+- Zip Your Extension Files
+
+Include:
+
+manifest.json
+
+index.html
+
+main.js
+
+Any other JS/CSS/assets you use
+
+- Go to Chrome Extensions
+
+- Navigate to chrome://extensions/
+
+- Enable Developer Mode (top-right toggle)
+
+- Load Your Extension
+
+- Click "Load unpacked"
+
+- Select the folder containing your extension
+
+- Open a New Tab
+
+Chrome will now open your index.html as the new tab page.
+
+## Note:
+🔐 Chrome only allows one extension to override the new tab at a time. If another one is active, it may override yours.
 
 ## Permissions
 
