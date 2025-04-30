@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "3D New Tab Theme",
+    "version": "1.0",
+    "description": "Custom 3D cubes as New Tab background.",
+    "permissions": [],
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    }
+  }
